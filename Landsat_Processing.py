@@ -9,9 +9,6 @@ from osgeo import gdal, ogr, osr
 import os 
 import tarfile
 
-os.environ['PROJ_LIB'] = r'C:\Users\wcamaro\Anaconda3\Library\share\proj'
-
-os.environ['GDAL_DATA'] =  r'C:\Users\wcamaro\Anaconda3\Library\share\gdal'
 
 
 
@@ -26,17 +23,17 @@ POLYGON_AOIS = {'Dyfi':'POLYGON ((-4.015 52.54, -3.97 52.54, -3.97 52.515, -4.01
 
 #Input and output paths
 #inputPath = '../Images/'
-inputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat4_5'
-# inputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat7'
-# inputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat8_9'
-# inputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\ttt'
+inputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat4_5'
+# inputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat7'
+# inputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Raw_files_Tar\Landsat8_9'
+# inputPath = r'ECHOES\06Datasets\WP5\LandsatImages\ttt'
 Landsatfiles = os.listdir(inputPath)
-# outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT04_LT05'
-# outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT07'
-# outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT08_LT09'
-outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT04_LT05'
-# outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT07'
-# outputPath = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT08_LT09'
+# outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT04_LT05'
+# outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT07'
+# outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT08_LT09'
+outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT04_LT05'
+# outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT07'
+# outputPath = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT08_LT09'
 
 
 temp = outputPath + '\\' + 'temp'
