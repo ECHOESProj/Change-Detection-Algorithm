@@ -11,26 +11,22 @@ import osgeo.gdalnumeric as gdn
 import os 
 import numpy as np
 
-os.environ['PROJ_LIB'] = r'C:\Users\wcamaro\Anaconda3\Library\share\proj'
-
-os.environ['GDAL_DATA'] =  r'C:\Users\wcamaro\Anaconda3\Library\share\gdal'
 
 Rad_Inds = ['NDVI', 'SIPI','NDWI']
 
-# images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT04_LT05'
-#images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT07'
-# images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT08_LT09'
-# RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT04_LT05'
-#RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT07'
-# RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT08_LT09'
+# images_path = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT04_LT05'
+#images_path = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT07'
+# images_path = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Dyfi\LT08_LT09'
+# RIS_path = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT04_LT05'
+#RIS_path = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT07'
+# RIS_path = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\Dyfi\LT08_LT09'
 
 
-images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT04_LT05'
-#images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT07'
-# images_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT08_LT09'
-RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Ballyteige\LT04_LT05'
-#RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Ballyteige\LT07'
-# RIS_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\Ballyteige\LT08_LT09'
+images_path = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT04_LT05'
+#images_path = rECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT07'
+# images_path = r'ECHOES\06Datasets\WP5\LandsatImages\Clipfiles\Ballyteige\LT08_LT09'
+#RIS_path = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\Ballyteige\LT07'
+# RIS_path = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\Ballyteige\LT08_LT09'
 LTfiles = os.listdir(images_path)
 
 
