@@ -13,9 +13,6 @@ import datetime
 from scipy.optimize import curve_fit
 #from matplotlib import pyplot
 
-os.environ['PROJ_LIB'] = r'C:\Users\wcamaro\Anaconda3\Library\share\proj'
-
-os.environ['GDAL_DATA'] =  r'C:\Users\wcamaro\Anaconda3\Library\share\gdal'
 
 output_years_file = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\images_by_year.txt'
 RIS_path_04_05 = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\LT04_LT05'
