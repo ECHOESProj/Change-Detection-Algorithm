@@ -14,16 +14,16 @@ from scipy.optimize import curve_fit
 #from matplotlib import pyplot
 
 
-output_years_file = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\images_by_year.txt'
-RIS_path_04_05 = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\LT04_LT05'
-RIS_path_07 = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\LT07'
-RIS_path_08_09 = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\RIs\LT08_LT09'
+output_years_file = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\images_by_year.txt'
+RIS_path_04_05 = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\LT04_LT05'
+RIS_path_07 = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\LT07'
+RIS_path_08_09 = r'ECHOES\06Datasets\WP5\LandsatImages\RIs\LT08_LT09'
 
 # NDVI_files_04_05 = [RIS_path_04_05 + '\\' + i for i in os.listdir(RIS_path_04_05) if 'NDVI' in i]
 # NDVI_files_07 = [RIS_path_07 + '\\' +i for i in os.listdir(RIS_path_07) if 'NDVI' in i]
 # NDVI_files_08_09 = [RIS_path_08_09 + '\\' +i for i in os.listdir(RIS_path_08_09) if 'NDVI' in i]
 
-output_path = r'C:\Users\wcamaro\Documents\ECHOES\06Datasets\WP5\LandsatImages\Change_Detection_Alg_Outcomes'
+output_path = r'ECHOES\06Datasets\WP5\LandsatImages\Change_Detection_Alg_Outcomes'
 
 # SIPI_files_04_05 = [RIS_path_04_05 + '\\' + i for i in os.listdir(RIS_path_04_05) if 'SIPI' in i]
 # SIPI_files_07 = [RIS_path_07 + '\\' +i for i in os.listdir(RIS_path_07) if 'SIPI' in i]
